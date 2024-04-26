@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Workout Data Analysis Web App
+
+## Overview
+This web application provides comprehensive analytics based on data from a workout tracking application. It allows users to visualize and analyze their workout progress over time, offering insights into workout intensity, frequency, and effectiveness.
+
+## Features
+- **Data Import**: Users can upload their workout data in CSV format directly into the web application.
+- **Interactive Charts**: Displays workout data through interactive charts that track various metrics such as total weight lifted, repetitions, and workout frequency.
+- **Performance Metrics**: Calculates and shows trends in workout performance, highlighting improvements and areas that need focus.
+- **Customizable Views**: Users can customize data views to focus on specific exercises, dates, or workout types.
+
+## Technology Stack
+- **Frontend**: React.js, Chart.js for data visualization, JOI-UI for styling.
+- **Backend**: Node.js with Express for handling API requests.
+- **Deployment**: Deployed on Vercel for easy access.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js
+- npm (Node Package Manager)
+- React
+- TailwindCSS
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Clone the repository**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```
+   git clone git@github.com:dark-eraser/strong-data-visualizer.git
+   cd strong-data-visualizer
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Install dependencies**
 
-## Learn More
+   ```
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Start the server**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```
+   npm start
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   The application should now be running on `http://localhost:3000`.
 
-## Deploy on Vercel
+## Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To use the app, navigate to `http://localhost:3000` on your web browser. Here’s how to proceed:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Upload Data**: Click on the 'Upload' button to select and upload your workout CSV file.
+2. **View Charts**: Once the data is uploaded, navigate to the 'Charts' section to see your workout data visualized.
+3. **Analyze Trends**: Use the 'Analysis' section to view performance trends and insights.
+
+## Status
+- [x] if a .csv file is available in the data folder, then visualization is available
+- [x] Visualization of weight over the time per exercise
+- [x] Visualization of weight over time per workout
+- [ ] Easy navigation
+- [ ] File Upload
+- [ ] More Graphs
+- [ ] Insights & Trends
+
+## Contributing
+
+We welcome contributions to our project. If you have suggestions to improve this app, please fork the repository and create a pull request, or open an issue with the tags "enhancement". Don't forget to give the project a star! Thanks!
+
+1. **Fork the Repository**
+2. **Create your Feature Branch** (`git checkout -b feature/AmazingFeature`)
+3. **Commit your Changes** (`git commit -m 'Add some AmazingFeature'`)
+4. **Push to the Branch** (`git push origin feature/AmazingFeature`)
+5. **Open a Pull Request**
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+

@@ -27,15 +27,20 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@globalContainer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  
+.globalContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 } 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.pageTitle {
+  @apply text-5xl;
+  text-align: center;
+  /* font-size: 40px; */
 }

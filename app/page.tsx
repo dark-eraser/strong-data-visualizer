@@ -15,23 +15,25 @@ const HomePage = () => {
   };
 
   return (
-    <div className="glabalContainer">
+    <div className="globalContainer">
+      <h1 className="pageTitle">Strong App Visualizer</h1>
       <Box
             height={200}
-            width={200}
+            width={600}
             my={4}
             display="flex"
             alignItems="center"
+            justifyContent="center"
             gap={4}
             p={2}
-            sx={{ border: '2px solid grey' }}
+            // sx={{ border: '2px solid grey' }}
       
       >
       <Button variant="contained" onClick={navigateToChart}>
-        View Chart
+        View Chart by Exercise
       </Button>
       <Button variant="contained" onClick={navigateToNewChart}>
-        View New Chart
+        View Chart by Workout
       </Button>
       </Box>
     </div>
